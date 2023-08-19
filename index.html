@@ -7,5 +7,69 @@
         <title>Encuesta HTML</title>
     </head>
     <body>
-        <h1 id="title">Formulario de encuesta</h1>
-      </body>
+      <h1 id="title">Formulario de encuesta</h1>
+      <p id="description">Descripcion del formulario<p>
+        <form id="survey-form">
+<div class="form-group">
+         <label id="name-label">Ingresa tu nombe: <input id="name" type="text" placeholder="Enter your name" required/></label>
+          <label id="email-label">Ingresa tu email: <input id="email" type="email" placeholder="Enter your Email" required/> </label>
+          <label id="number-label">Ingresa tu edad: <input id="number" type="number" min="10" max="99" placeholder="Age"/></label>
+</div>
+<div class="form-group">
+          <select id="dropdown" name="options">
+            <option value="option1">Option1</option>
+            <option value="option2">Option2</option>
+          </select>
+</div>
+ <div class="form-group">         
+           <label>
+            <input
+              name="user-recommend"
+              value="maybe"
+              type="radio"
+              class="input-radio"
+            />boton1</label
+          >
+
+          <label
+            ><input
+              name="user-recommend"
+              value="not-sure"
+              type="radio"
+              class="input-radio"
+            />boton2</label>
+  </div>
+  <div class="form-group">         
+           <label>
+            <input
+              name="user-recommend"
+              value="maybe"
+              type="checkbox"
+              class="input-radio"
+            />check1</label
+          >
+
+          <label
+            ><input
+              name="user-recommend"
+              value="not-sure"
+              type="checkbox"
+              class="input-radio"
+            />check2</label>
+  </div>
+  <div class="form-group">
+          <p>Algún comentario adicional?</p>
+          <textarea
+            id="comments"
+            class="input-textarea"
+            name="comment"
+            placeholder="Enter your comment here..."
+          ></textarea>
+        </div>
+        <div class="form-group">
+          <button type="submit" id="submit" class="submit-button">
+            Submit
+          </button>
+        </form>
+    </body>
+</html>
